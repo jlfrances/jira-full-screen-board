@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Full-Screen JIRA Board",
+  "description": "Display JIRA Board without any other elements on screen",
+  "version": "1.0",
+  "action": {
+    "default_popup": "settings.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://convidad.atlassian.net/jira/software/c/projects/*"
+      ]
+    }
+  ]
+}
